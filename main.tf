@@ -5,7 +5,7 @@
 resource "aws_db_subnet_group" "postgres_db_subnet_group" {
   name        = "${var.db_identifier_name}_subnet_group"
   description = "${var.db_identifier_name} Subnet Group"
-  subnet_ids  = flatten(var.subnet_ids)
+  subnet_ids  = flatten(var.db_subnet_ids)
 
   tags = {
     "Name" = "${var.db_identifier_name}-postgres-db-subnet-group"

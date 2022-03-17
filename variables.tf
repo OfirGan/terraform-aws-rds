@@ -12,7 +12,7 @@ variable "route53_zone_zone_id" {
   type        = string
 }
 
-variable "db_subnets_ids" {
+variable "db_subnet_ids" {
   description = "DB Subnet Ids"
   type        = list(string)
 }
